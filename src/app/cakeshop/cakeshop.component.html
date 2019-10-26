@@ -1,0 +1,116 @@
+<!-- Section: Features v.1 -->
+<section class="text-center my-5 text-center">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Why is it so great?</h2>
+    <!-- Section description -->
+    <p class="lead grey-text w-responsive mx-auto mb-5">
+        Our Cake Shop began in 2008 as a small shop on Ahmdabaed with less than a dozen products and has quickly grown to be an industry leading baking supply company featuring the largest selection of sprinkles in the world and thousands of inspired baking supplies.
+    </p>
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-md-4">
+  
+        <img src="assets/cake.svg" style="width:50%; height: 50%;" >
+        <h5 class="font-weight-bold my-4">Cake</h5>
+        <p class="grey-text mb-md-0 mb-5">We have variety of cakes avilable for you.
+        </p>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-md-4">
+  
+        <img src="assets/booking.svg" style="width:50%; height: 50%;" >
+        <h5 class="font-weight-bold my-4">Online Booking</h5>
+        <p class="grey-text mb-md-0 mb-5">You can easily book  a cake anytime because we are available online.</p>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-md-4">
+  
+        <img src="assets/cookie.svg" style="width:50%; height: 50%;" >
+        <h5 class="font-weight-bold my-4">Quality</h5>
+        <p class="grey-text mb-0">We ensure Quality for you so don't just order.
+        </p>
+  
+      </div><br>
+      <!-- Grid column -->
+  <button class="btn" style="margin: auto;background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: white;  "data-toggle="modal" data-target="#basicExampleModal" >Order Now</button>
+    </div>
+
+    <div class="modal  fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Order Now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-sm-6"><img src="assets/cake1.jpg" style="width: 100%;"  ></div>
+              <div class="col-sm-6"> <h4>Chocolate Cake</h4><select (change)="onChange($event.target.value,1)">
+                                                              <option selected disabled value="-1">Select Weight</option>
+                                                              <option  value="1">1kg</option>
+                                                              <option  value="2">2kg</option>
+                                                              <option value="3">3kg</option>
+                                                            </select>
+                                                            &nbsp;<b>RS {{cake1}}</b>
+                                        <br><br><button class="btn btn-sm btn-success " (click)="fun(1)"  >Buy Now</button>
+            </div>
+
+              </div>
+              <div class="row">
+                    <div class="col-sm-6"><img src="assets/cake2.jpg" style="width: 100%; " ></div>
+                    <div class="col-sm-6"> <h4>Stawberry Cake</h4><p>Stawberry cake with gemes topings</p>
+                      <select (change)="onChange($event.target.value,2)">
+                          <option selected disabled value="-1" >Select Weight</option>
+                          <option  value="1">1kg</option>
+                          <option  value="2">2kg</option>
+                          <option value="3">3kg</option>
+                        </select>
+                        &nbsp;<b>RS {{cake2}}</b>
+    <br><br><button class="btn btn-sm btn-success " (click)="fun(2)"  >Buy Now</button>
+</div>   
+                </div>
+                    <div class="row">
+                            <div class="col-sm-6"><img src="assets/cake3.jpg" style="width: 100%;  " ></div>
+                            <div class="col-sm-6"> <h4>Wedding Cake</h4><p>Weeding cake with special topings</p>
+                              <select (change)="onChange($event.target.value,3)">
+                                  <option selected disabled value="-1">Select Weight</option>
+                                  <option  value="1">1kg</option>
+                                  <option  value="2">2kg</option>
+                                  <option value="3">3kg</option>
+                                </select>
+                                &nbsp;<b>RS {{cake3}}</b>
+            <br><br><button class="btn btn-sm btn-success " (click)="fun(3)"  >Buy Now</button>
+    </div>
+                        </div>
+        </div>
+        <div class="modal-footer" >
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Grid row -->
+
+    <!-- Central Modal Small -->
+
+<!-- Central Modal Small -->
+  
+  </section>
+  <!-- Section: Features v.1 -->
